@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(223, 223, 223, 0.762);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #2c2c2c;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #373737;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #5555;
+}
+
+/* Setting background and text color for the body */
+body {
+  background-color: rgb(9, 9, 9);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  padding: 10px;
+  margin-right: 5em;
+  margin-top: 14px;
+}
+
+/* Styling navbar links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid white;
+  margin-left: 19px; /* This separates and puts spaces in between the buttons */
+  border-radius: 5px;
+  transition: background-color 1s ease;
+}
+
+/* Adding hover effect to navbar links */
+.navbar a:hover {
+  background-color: #2f2f2fa4;
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+
+/*Container css starts here*/
+
+.container {
+  width: 80em; 
+  height: 30em ;
+  margin: 10px auto;
+  border-radius: 15px;
+  background-color: #21212143;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 80%; /* Adjust this value to position the gradient at the desired height */
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(198, 39, 39, 0), rgba(0,0,0,1));
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+
+
+h1 { /*Text*/
+  font-size: 17px;
+  text-align: center;
+  padding-top: 17px;
+  height: 46px;
+  font-family: 'Chivo Mono';
+  background-image: linear-gradient(to right, #3c3c3c, #afafafee, #c6c6c6ee); /* Text gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  color: #787878;
+}
+
+hr {
+  width: 240px;
+  margin: auto;
+}
+
+
+.content{
+  width: 70em;
+  padding: 10px;
+  margin: 10px auto;
+}
+/*End of about section*/
+/*End of about section*/
+/*End of about section*/
+/*End of about section*/
+
+/*Application css*/
+
+
+

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(17, 17, 17);
+  box-sizing: border-box; /* Add this to make padding and border part of the element's width and height */
+}
+
+html::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
+.container {
+  border: 1px solid rgb(100, 100, 100);
+  margin: 60px auto;
+  width: 60em;
+  height: 38em;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(23, 23, 23);
+}
+
+.header {
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-family: 'Shadows Into Light';
+  font-size: 16px;
+  width: 400px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(23, 23, 23);
+}
+
+.class-action {
+  color: white;
+  width: 55em;
+  height: 32em;
+  margin-top: 16px;
+  margin-right: 3em;
+  padding-left: 5px;
+  background-color: rgb(23, 23, 23);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tos-h {
+  font-family: 'Roboto';
+  color: #787878;
+  font-size: 22px;
+  background-color: rgb(23, 23, 23);
+}
+
+.terms-of-service {
+  background-color: rgba(23, 23, 23, 0);
+  text-align: center;
+  color: rgb(132, 132, 132);
+}
+
+.date {
+  font-size: 19px;
+  color: rgb(132, 132, 132);
+  background-color: rgb(23, 23, 23);
+  border: 1px solid rgba(255, 0, 0, 0);
+  padding-top: 4px;
+  font-family: 'Shadows Into Light';
+}
+
+p {
+  color: #5a5a5a;
+  text-align: left;
+  font-size: 14px;
+  font-family: 'Roboto';
+  background-color: rgb(23, 23, 23);
+  margin: 11px;
+}
+
+a {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(23, 23, 23);
+  color: rgb(130, 130, 130);
+}
+
+.test {
+  width: 23em;
+  border: none;
+  border-top: 1px solid #787878;
+  animation: expand 1.9s ease-in-out infinite alternate;
+}
+
+@keyframes expand {
+  from {
+    width: 2em;
+  }
+  to {
+    width: 23em;
+  }
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 80%; /* Adjust container width */
+    height: auto; /* Allow container height to adjust based on content */
+  }
+  
+  .class-action {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .class-action {
+    height: auto; /* Allow class-action height to adjust based on content */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust container width for smaller screens */
+    height: auto; /* Allow container height to adjust based on content */
+    border-radius: 20px; /* Reduce border radius for smaller screens */
+    margin: 20px auto; /* Adjust margin for smaller screens */
+  }
+  
+  .header {
+    width: 90%; /* Adjust header width for smaller screens */
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+  
+  .class-action {
+    width: 90%; /* Adjust class-action width for smaller screens */
+    height: auto; /* Allow class-action height to adjust based on content */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+  
+  p {
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+  
+  a {
+    width: 80px; /* Adjust width for smaller screens */
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
+  
+  .test {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
